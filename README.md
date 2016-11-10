@@ -1,7 +1,8 @@
-# restVersioningExample
+**The integration Flow**
 
-Spring rest versioning implementation.
-
-Check:
-
-http://stackoverflow.com/questions/20198275/how-to-manage-rest-api-versioning-with-spring/39066141#39066141
+![Alt text](http://g.gravizo.com/g?
+ digraph g{
+   rankdir=LR;
+   "FILE" -> "FileParseActivator" -> "StringToProductTransformer" -> "ProductNormalizerTransformer" -> "PersistProductFilter" -> "AggregatorActivator" -> "PersistProductActivator"
+ }
+)
